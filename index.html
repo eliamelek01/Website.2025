@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Invest in your home together with friends and family.">
+    <title>HomeTogether</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="bg" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#">
+        <img class="brand-logo" src="file:///C:/Users/eliam/Downloads/logo.png" alt="HomeTogether logo" id="brandLogo">
+        <svg id="brandLogoFallback" class="brand-logo" viewBox="0 0 64 64" aria-hidden="true" style="display:none">
+          <defs>
+            <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+              <stop offset="0%" stop-color="#ff7a18"/>
+              <stop offset="100%" stop-color="#ffb445"/>
+            </linearGradient>
+          </defs>
+          <path d="M4 30 L32 10 L60 30" fill="none" stroke="url(#g)" stroke-width="4" stroke-linecap="round"/>
+          <path d="M14 28 V54 H50 V28" fill="none" stroke="url(#g)" stroke-width="4"/>
+          <circle cx="24" cy="32" r="3" fill="url(#g)"/>
+          <circle cx="40" cy="32" r="3" fill="url(#g)"/>
+          <path d="M28 40 C30 38, 34 38, 36 40" fill="none" stroke="url(#g)" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-name">HomeTogether</span>
+      </a>
+      <nav class="nav">
+        <a class="nav-link" href="#mission">Mission</a>
+        <a class="nav-link" href="#survey">Survey</a>
+        <a class="nav-cta" href="#signup">Join waitlist</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="hero-inner">
+          <h1 class="hero-title">Invest in your home, together</h1>
+          <p class="hero-sub">Co-invest with people you trust to buy a home to live or rent out. Transparent sharing, clear agreements, simple management.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSc7Wlrm1hpc_YLq0piCgWzVcUE0c5a9kRk9TEKoNFOrPiX8pg/viewform?usp=dialog" target="_blank" rel="noopener">Take the 5‑minute survey</a>
+            <a class="btn" href="#signup">Join the waitlist</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="features" id="mission">
+        <div class="feature">
+          <h3>Pool resources</h3>
+          <p>Coordinate contributions and decisions seamlessly to reach ownership together.</p>
+        </div>
+        <div class="feature">
+          <h3>Simplify</h3>
+          <p>Reduce legal burden and streamline financial tracking of shares, costs and returns.</p>
+        </div>
+        <div class="feature">
+          <h3>Trust</h3>
+          <p>Built‑in transparency and accountability for fair, secure co‑ownership.</p>
+        </div>
+      </section>
+
+      <section id="survey" class="survey-cta">
+        <div class="container survey-grid">
+          <div class="survey-copy">
+            <h2>Help shape the future of home ownership</h2>
+            <p>Tell us your needs and struggles when purchasing real estate. It takes less than 5 minutes.</p>
+            <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSc7Wlrm1hpc_YLq0piCgWzVcUE0c5a9kRk9TEKoNFOrPiX8pg/viewform?usp=dialog" target="_blank" rel="noopener">Start survey</a>
+          </div>
+          <div class="qr">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc7Wlrm1hpc_YLq0piCgWzVcUE0c5a9kRk9TEKoNFOrPiX8pg/viewform?usp=dialog" target="_blank" rel="noopener" aria-label="Open survey via QR code">
+              <img id="surveyQR" src="file:///C:/Users/eliam/Downloads/QR%20code.png" alt="QR code linking to the survey">
+            </a>
+            <small>Scan the QR code to open the survey on your phone</small>
+          </div>
+        </div>
+      </section>
+
+      <section id="signup" class="signup">
+        <div class="container">
+          <h2>Get early access</h2>
+          <p>Are you interested? Sign up to stay updated and get a 20% discount on your way to home ownership together (no monetary commitment).</p>
+          <form id="waitlistForm" class="waitlist" method="POST" action="https://formsubmit.co/Home.Together25@gmail.com" novalidate>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            <input type="hidden" name="_subject" value="New waitlist signup – HomeTogether">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="./index.html?subscribed=1#signup">
+            <button type="submit" class="btn btn-primary">Sign up</button>
+          </form>
+          <div id="formMessage" class="form-message" role="status" aria-live="polite"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <small>© <span id="year"></span> HomeTogether</small>
+        <a class="footer-link" href="#hero">Back to top</a>
+      </div>
+    </footer>
+  </body>
+</html>
