@@ -83,15 +83,17 @@
         <div class="container">
           <h2>Get early access</h2>
           <p>Are you interested? Sign up to stay updated and get a 20% discount on your way to home ownership together (no monetary commitment).</p>
-          <form id="waitlistForm" class="waitlist" method="POST" action="https://formsubmit.co/Home.Together25@gmail.com" novalidate>
-            <input type="email" id="email" name="email" placeholder="you@example.com" required>
-            <input type="hidden" name="_subject" value="New waitlist signup – HomeTogether">
+          <form action="https://formsubmit.co/info@hometogether.ch" method="POST" id="waitlistForm" class="waitlist">
+            <input type="text" name="name" id="name" placeholder="Your name" required>
+            <input type="email" name="email" id="email" placeholder="you@example.com" required>
+            <input type="hidden" name="_subject" value="early access request">
             <input type="hidden" name="_template" value="table">
             <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="./index.html?subscribed=1#signup">
-            <button type="submit" class="btn btn-primary">Sign up</button>
+            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+            <button type="submit" class="btn btn-primary">Send</button>
           </form>
           <div id="formMessage" class="form-message" role="status" aria-live="polite"></div>
+          <small class="disclaimer">No financial commitment. No advertising. We will only use your details to contact you about early access.</small>
         </div>
       </section>
     </main>
