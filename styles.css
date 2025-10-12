@@ -34,7 +34,7 @@ body {
 .bg {
   position: fixed;
   inset: 0;
-  background-image: linear-gradient(rgba(15,17,21,0.35), rgba(15,17,21,0.55)), url('file:///C:/Users/eliam/Downloads/background%20picture.png');
+  background-image: linear-gradient(rgba(15,17,21,0.35), rgba(15,17,21,0.55)), url('background picture.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
