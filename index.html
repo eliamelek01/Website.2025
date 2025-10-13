@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Invest in your home together with friends and family.">
+    <meta name="description" content="Co-invest in property with people you trust. Transparent agreements and simple management.">
     <title>HomeTogether</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
@@ -32,6 +32,7 @@
       <nav class="nav">
         <a class="nav-link" href="#mission">Mission</a>
         <a class="nav-link" href="#survey">Survey</a>
+        <a class="nav-link" href="#contact">Contact</a>
         <a class="nav-cta" href="#signup">Join waitlist</a>
       </nav>
     </header>
@@ -39,8 +40,8 @@
     <main>
       <section class="hero" id="hero">
         <div class="hero-inner">
-          <h1 class="hero-title">Invest in your home, together</h1>
-          <p class="hero-sub">Co-invest with people you trust to buy a home to live or rent out. Transparent sharing, clear agreements, simple management.</p>
+          <h1 class="hero-title">Build property ownership, together</h1>
+          <p class="hero-sub">Bring the right partners together, align on clear agreements, and manage ownership simply and transparently.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSc7Wlrm1hpc_YLq0piCgWzVcUE0c5a9kRk9TEKoNFOrPiX8pg/viewform?usp=dialog" target="_blank" rel="noopener">Take the 5‑minute survey</a>
             <a class="btn" href="#signup">Join the waitlist</a>
@@ -50,24 +51,24 @@
 
       <section class="features" id="mission">
         <div class="feature">
-          <h3>Pool resources</h3>
-          <p>Coordinate contributions and decisions seamlessly to reach ownership together.</p>
+          <h3>Coordinate</h3>
+          <p>Pool resources and coordinate decisions to reach ownership together.</p>
         </div>
         <div class="feature">
           <h3>Simplify</h3>
-          <p>Reduce legal burden and streamline financial tracking of shares, costs and returns.</p>
+          <p>Reduce legal burden and keep track of shares, costs, and returns easily.</p>
         </div>
         <div class="feature">
           <h3>Trust</h3>
-          <p>Built‑in transparency and accountability for fair, secure co‑ownership.</p>
+          <p>Built-in transparency and accountability for fair, secure co-ownership.</p>
         </div>
       </section>
 
       <section id="survey" class="survey-cta">
         <div class="container survey-grid">
           <div class="survey-copy">
-            <h2>Help shape the future of home ownership</h2>
-            <p>Tell us your needs and struggles when purchasing real estate. It takes less than 5 minutes.</p>
+            <h2>Help shape the future of homeownership</h2>
+            <p>Share your needs and challenges in purchasing real estate. It takes less than 5 minutes.</p>
             <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSc7Wlrm1hpc_YLq0piCgWzVcUE0c5a9kRk9TEKoNFOrPiX8pg/viewform?usp=dialog" target="_blank" rel="noopener">Start survey</a>
           </div>
           <div class="qr">
@@ -79,17 +80,20 @@
         </div>
       </section>
 
+      <section id="contact" class="contact">
+        <div class="container">
+          <h2>Contact</h2>
+          <p>Questions, inquiries, or suggestions? Email us at <a href="mailto:info@hometogether.ch">info@hometogether.ch</a>.</p>
+        </div>
+      </section>
+
       <section id="signup" class="signup">
         <div class="container">
-          <h2>Get early access</h2>
-          <p>Are you interested? Sign up to stay updated and get a 20% discount on your way to home ownership together (no monetary commitment).</p>
-          <form action="https://formsubmit.co/info@hometogether.ch" method="POST" id="waitlistForm" class="waitlist">
+          <h2>Join the waitlist</h2>
+          <p>Interested? Sign up to receive updates and early access. No financial commitment.</p>
+          <form action="https://script.google.com/macros/s/AKfycbz-TIvZyZOcjoq7XAzsumNLRNqr3ol8TNXcN7H2ac4ZSXI-SBcq_KSlrRUzSW-BSIDw/exec" method="POST" id="waitlistForm" class="waitlist">
             <input type="text" name="name" id="name" placeholder="Your name" required>
             <input type="email" name="email" id="email" placeholder="you@example.com" required>
-            <input type="hidden" name="_subject" value="early access request">
-            <input type="hidden" name="_template" value="table">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
             <button type="submit" class="btn btn-primary">Send</button>
           </form>
           <div id="formMessage" class="form-message" role="status" aria-live="polite"></div>
@@ -101,6 +105,7 @@
     <footer class="site-footer">
       <div class="container footer-inner">
         <small>© <span id="year"></span> HomeTogether</small>
+        <a class="footer-link" href="mailto:info@hometogether.ch">info@hometogether.ch</a>
         <a class="footer-link" href="#hero">Back to top</a>
       </div>
     </footer>
